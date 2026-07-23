@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--dark);
+  background-color: var(--light);
+  line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #6d4620;
+  border-color: #6d4620;
+  transform: translateY(-2px);
+}
+
+.btn-outline-secondary {
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: 600;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  section {
+    padding: 40px 0;
+  }
+  
+  .display-4 {
+    font-size: 2rem;
+  }
+}
+
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+
+/* Styles supplémentaires pour la page d'accueil */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F5F1E8;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
+}
+
+/* Custom button styles */
+.btn-mimosas-primary {
+  background-color: #8B7355 !important;
+  border-color: #8B7355 !important;
+  transition: all 0.3s ease;
+}
+
+.btn-mimosas-primary:hover {
+  background-color: #6B5635 !important;
+  border-color: #6B5635 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(139, 115, 85, 0.4);
+}
+
+/* Section spacing */
+.section-py {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .section-py {
+    padding: 40px 0;
+  }
+}
