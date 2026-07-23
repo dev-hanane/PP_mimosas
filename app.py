@@ -1369,4 +1369,7 @@ if __name__ == '__main__':
     with app.app_context():
         migrate_community_schema()
         ensure_default_accommodations()
-    socketio.run(app, debug=True, host='0.0.0.0', port=5000)
+    # Use the PORT environment variable provided by PaaS (Railway, Render, etc.)
+    port = int(os.environ.get('PORT', 5000))
+    # Disable debug in production by default here; the platform controls env vars
+    socketio.run(app, debug=False, host='0.0.0.0', port=port)
