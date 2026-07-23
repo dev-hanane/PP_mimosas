@@ -1,0 +1,118 @@
+{
+  "camping_name": "Camping Mimosas",
+  "contact": {
+    "phone": "+212 05 34 56 09 12",
+    "email": "info@campingmimosas.com",
+    "address": "Route côtière R322, El Mansouria / Mohammédia",
+    "reception_hours": "8h – 20h",
+    "restaurant_hours": "12h – 22h",
+    "check_in": "14h",
+    "check_out": "11h"
+  },
+  "links": {
+    "booking": "/booking",
+    "services": "/services",
+    "gallery": "/galerie",
+    "community": "/communaute",
+    "home": "/"
+  },
+  "entries": [
+    {
+      "id": "greeting",
+      "keywords": ["bonjour", "salut", "hello", "bonsoir", "coucou", "hey"],
+      "small_talk": true,
+      "reply": "Bonjour ! 👋 Je suis Mimos, l'assistant officiel du Camping Mimosas. Je peux vous renseigner sur les hébergements, tarifs, services, horaires et réservations. Que souhaitez-vous savoir ?"
+    },
+    {
+      "id": "thanks",
+      "keywords": ["merci", "thanks", "thank you", "parfait", "super", "génial", "genial"],
+      "small_talk": true,
+      "reply": "Avec plaisir ! 😊 N'hésitez pas si vous avez d'autres questions. Bon séjour au Camping Mimosas !"
+    },
+    {
+      "id": "goodbye",
+      "keywords": ["au revoir", "bye", "à bientôt", "a bientot", "ciao"],
+      "small_talk": true,
+      "reply": "Au revoir ! 👋 Nous serons ravis de vous accueillir au Camping Mimosas. À très bientôt !"
+    },
+    {
+      "id": "pricing",
+      "keywords": ["tarif", "tarifs", "prix", "combien", "coût", "cout", "coûte", "coute", "mad", "dh", "cher"],
+      "source": "database_accommodations",
+      "reply": null
+    },
+    {
+      "id": "accommodations",
+      "keywords": ["hébergement", "hebergement", "logement", "bungalow", "chalet", "caravane", "camping-car", "camping car", "mobile home", "tente", "emplacement", "dormir", "nuit"],
+      "source": "database_accommodations",
+      "reply": null
+    },
+    {
+      "id": "booking",
+      "keywords": ["réserver", "reserver", "réservation", "reservation", "booking", "book", "réserver en ligne"],
+      "reply": "📅 **Réserver au Camping Mimosas**\n\n1. Allez sur la page **Réservation** du site (/booking)\n2. Choisissez votre hébergement et vos dates\n3. Renseignez vos coordonnées et validez\n\nVous pouvez aussi nous appeler au {phone} ou écrire à {email}."
+    },
+    {
+      "id": "availability",
+      "keywords": ["disponibilité", "disponibilite", "disponible", "place", "libre", "date", "juin", "juillet", "août", "aout", "week-end", "weekend"],
+      "reply": "📆 Les disponibilités changent selon les dates.\n\n➡️ Consultez et réservez en direct sur **/booking**\n\nPour une demande spécifique, contactez-nous :\n📞 {phone}\n📧 {email}"
+    },
+    {
+      "id": "hours",
+      "keywords": ["horaire", "horaires", "ouvert", "ouverture", "fermé", "ferme", "fermeture", "heure", "quand"],
+      "reply": "🕐 **Horaires Camping Mimosas**\n\n• Accueil : {reception_hours}\n• Restaurant : {restaurant_hours}\n• Check-in : {check_in} | Check-out : {check_out}\n\nLe camping accueille les visiteurs toute l'année (sous réserve de disponibilité)."
+    },
+    {
+      "id": "location",
+      "keywords": ["adresse", "localisation", "localiser", "direction", "venir", "accès", "acces", "gps", "carte", "itinéraire", "itineraire", "ou se trouve", "où se trouve", "ou est", "où est", "situe", "situé", "situee"],
+      "reply": "📍 **Camping Mimosas**\n\n{address}\n\nPour l'itinéraire précis, contactez-nous :\n📞 {phone}\n📧 {email}\n\nNous vous enverrons les indications exactes."
+    },
+    {
+      "id": "services",
+      "keywords": ["service", "services", "équipement", "equipement", "wifi", "wi-fi", "internet", "parking", "sanitaire", "douche", "électricité", "electricite"],
+      "reply": "✅ **Services & équipements**\n\n• Wi-Fi dans les espaces communs\n• Sanitaires propres et entretenus\n• Parking sécurisé (accès 24h/24)\n• Raccordements électriques (emplacements)\n• Restaurant sur place\n• Espaces verts et cadre naturel\n\n➡️ Détails : /services"
+    },
+    {
+      "id": "restaurant",
+      "keywords": ["restaurant", "manger", "repas", "petit-déjeuner", "petit dejeuner", "déjeuner", "dejeuner", "dîner", "diner", "cuisine", "nourriture"],
+      "reply": "🍽️ **Restauration**\n\nRestaurant sur place : cuisine marocaine traditionnelle et plats internationaux.\n\n• Horaires : {restaurant_hours}\n• Petit-déjeuner, déjeuner et dîner\n\nPlus d'infos sur /services"
+    },
+    {
+      "id": "activities",
+      "keywords": ["activité", "activite", "activités", "activites", "faire", "loisir", "loisirs", "randonnée", "randonnee", "randonnées", "atelier", "feu de camp", "yoga", "nature"],
+      "reply": "🎯 **Activités & loisirs**\n\n• Randonnées guidées\n• Ateliers artisanaux\n• Soirées feu de camp\n• Yoga en plein air\n• Découverte de la faune locale\n\nCertaines activités sont incluses, d'autres en supplément.\n➡️ Voir /services"
+    },
+    {
+      "id": "payment",
+      "keywords": ["paiement", "payer", "carte", "virement", "espèce", "espece", "stripe", "en ligne"],
+      "reply": "💳 **Modes de paiement**\n\nLors de la réservation en ligne (/booking) :\n• Paiement à l'arrivée\n• Virement bancaire\n• Paiement en ligne sécurisé (carte)\n\nQuestions ? {phone} | {email}"
+    },
+    {
+      "id": "cancellation",
+      "keywords": ["annulation", "annuler", "remboursement", "rembourser", "annulé", "annule"],
+      "reply": "🔄 **Annulation flexible**\n\nAnnulation possible jusqu'à **48 h avant l'arrivée** (selon conditions de votre réservation).\n\nPour modifier ou annuler, contactez-nous :\n📞 {phone}\n📧 {email}"
+    },
+    {
+      "id": "pets",
+      "keywords": ["chien", "chien", "chat", "animal", "animaux", "pet", "pets"],
+      "reply": "🐾 **Animaux de compagnie**\n\nMerci de nous contacter avant votre séjour pour connaître les conditions d'accueil des animaux :\n📞 {phone}\n📧 {email}\n\n(Les règles peuvent varier selon le type d'hébergement.)"
+    },
+    {
+      "id": "contact",
+      "keywords": ["contact", "contacter", "téléphone", "telephone", "tel", "appeler", "mail", "email", "écrire", "ecrire"],
+      "reply": "📞 **Nous contacter**\n\n• Téléphone : {phone}\n• Email : {email}\n• Réservation en ligne : /booking\n\nAccueil : {reception_hours}"
+    },
+    {
+      "id": "community",
+      "keywords": ["communauté", "communaute", "chat", "groupe", "membres", "forum"],
+      "reply": "💬 Rejoignez la **communauté** des campeurs sur /communaute pour échanger avec d'autres visiteurs et l'équipe (espace réservé aux membres connectés)."
+    },
+    {
+      "id": "gallery",
+      "keywords": ["photo", "photos", "galerie", "image", "images", "voir le camping"],
+      "reply": "📸 Découvrez le camping en images sur **/galerie** — hébergements, nature et activités."
+    }
+  ],
+  "fallback": "Je n'ai pas d'information officielle sur ce point précis. 🤔\n\nPour une réponse fiable, contactez directement le Camping Mimosas :\n📞 {phone}\n📧 {email}\n\nOu consultez :\n• Réservation : /booking\n• Services : /services",
+  "database_fallback_accommodations": "🏕️ **Nos hébergements** (tarifs indicatifs / nuit) :\n\n• Bungalow / Chalet — 150 MAD\n• Emplacement caravane — 120 MAD\n• Emplacement tente — 80 MAD\n• Camping-car / Mobile home — 130 MAD\n\n➡️ Réserver : /booking"
+}
